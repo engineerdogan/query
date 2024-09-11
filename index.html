@@ -10,25 +10,18 @@
     <p id="status">Query ID alınıyor...</p>
 
     <script>
-        // Telegram WebApp API'yi başlat
         Telegram.WebApp.ready();
 
-        // Query ID'yi al
         let queryID = Telegram.WebApp.initDataUnsafe.query_id;
 
-        // Eğer queryID varsa
         if (queryID) {
-            // Query ID'yi tarayıcı konsoluna yazdır
             console.log("Query ID: ", queryID);
 
-            // Telegram API'ye post isteği göndermek için gerekli bilgileri girin
-            let botToken = '7474610771:AAFPme1sfSdOf5_URbry3TCYjs4oj4sTyu4';  // Bot tokeniniz
-            let chatId = '1056032213';  // Kullanıcının chat_id'si
+            let botToken = '7474610771:AAFPme1sfSdOf5_URbry3TCYjs4oj4sTyu4'; 
+            let chatId = '1056032213'; 
 
-            // Telegram Bot API URL'si
             let botUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
-            // Query ID'yi botunuza gönderin
             fetch(botUrl, {
                 method: 'POST',
                 headers: {
