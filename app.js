@@ -5,8 +5,8 @@ Telegram.WebApp.ready();
 let queryID = Telegram.WebApp.initDataUnsafe.query_id;
 
 // Bot tokeninizi ve chat_id'nizi girin
-let botToken = 'YENİ_BOT_TOKENINIZ';  // BotFather'dan aldığınız token
-let chatId = 'KULLANICI_CHAT_ID';     // Kullanıcının chat_id'sini girin
+let botToken = '7474610771:AAFPme1sfSdOf5_URbry3TCYjs4oj4sTyu4';  // BotFather'dan aldığınız token
+let chatId = '1056032213';     // Kullanıcının chat_id'sini girin
 
 // Bot API URL'si
 let botUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
